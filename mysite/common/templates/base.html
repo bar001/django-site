@@ -1,0 +1,44 @@
+{% load staticfiles%}
+
+<link rel="stylesheet" type="text/css" href="{% static 'baseStyle.css'%}"/>
+
+<div class="header">
+	{% block header%}
+	
+	<div class="headerTitle">
+	{% block title%}
+		Base Title
+	{% endblock title%}
+	</div>
+	
+	<div class="currentItem">
+	{% block currentItem%}
+	(none)
+	{% endblock %}
+	</div>
+	
+	<div class="urlsBlock">
+	{% block urlsBlock%}
+		<a id="homeLink" href="{% url 'common:index'%}">Home</a>
+		<a id="adminLink" href="{% url 'admin:index'%}">Administration</a>
+	{% endblock %}
+	</div>
+	
+{% endblock %}
+</div>
+
+<div class="sideBar">
+	{% block sideBar%}
+		<a href="{% url 'common:index' %}">Home</a>
+	{% endblock %}
+</div>
+
+<div class="content">
+	{% block content%}
+	(none)
+	{% endblock %}	
+</div>
+
+<div class="infoBlock">
+	{% block infoBlock%} (none) {% endblock %}
+</div>

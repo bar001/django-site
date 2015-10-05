@@ -1,0 +1,53 @@
+.header{
+	position:absolute;
+	left:5px;
+	right:5px;
+	top:5px;
+	height:80px;
+	background:lightgray;
+}
+
+.urlsBlock{
+	position:absolute;
+	right:0;
+	top:5px;
+	width:150;
+}
+
+#homeLink{
+	position:relative;
+	left:5px;
+}
+
+#adminLink{
+	position:relative;
+	left:5px;
+}
+
+
+.sideBar{
+	position:absolute;
+	left:5px;
+	top:90px;
+	bottom:5px;
+	width:200px;
+	background:lightblue;
+}
+
+.content{
+	position:absolute;
+	left:210px;
+	top:90px;
+	bottom:5px;
+	right:160px;
+	background:lightblue;
+}
+
+.infoBlock{
+	position:absolute;
+	top:90px;
+	bottom:5px;
+	right:5px;
+	width:150px;
+	background:lightblue;
+}
