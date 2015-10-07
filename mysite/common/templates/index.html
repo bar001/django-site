@@ -1,5 +1,16 @@
 {% extends 'base.html'%}
 
+{% block sideBar%}
+	<div class="sideBarMainMenu">
+		<li><a href="{% url 'common:equipments' %}">Equipments</a></li>
+		<li><a href="{% url 'common:brands' %}">Brands</a></li>
+	</div>
+{% endblock %}
+
+
+{% block currentItem%}
+{% endblock%}
+
 {% block content%}
 <p>Hello!!!</p>
 {% endblock %}

@@ -7,6 +7,23 @@
 	background:lightgray;
 }
 
+.headerTitle{
+	position:absolute;
+	left: 10px;
+	top: 20px;
+	font-size:20;
+	font-family:"Times New Roman", Times, serif;
+	font-style:italic;
+}
+
+.currentItem{
+	position:absolute;
+	left: 210px;
+	top: 25px;
+	font-family:"Times New Roman", Times, serif;
+	font-style:italic;
+}
+
 .urlsBlock{
 	position:absolute;
 	right:0;
@@ -32,6 +49,7 @@
 	bottom:5px;
 	width:200px;
 	background:lightblue;
+	padding:10px;
 }
 
 .content{
@@ -41,6 +59,7 @@
 	bottom:5px;
 	right:160px;
 	background:lightblue;
+	padding:10px;
 }
 
 .infoBlock{
@@ -50,4 +69,12 @@
 	right:5px;
 	width:150px;
 	background:lightblue;
+	padding:10px;
 }
+
+#createEquip, #createBrand{
+	float:right;
+}
+
+
+

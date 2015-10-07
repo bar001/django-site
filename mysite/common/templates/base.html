@@ -1,5 +1,8 @@
 {% load staticfiles%}
+{% load bootstrap3 %}
 
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 <link rel="stylesheet" type="text/css" href="{% static 'baseStyle.css'%}"/>
 
 <div class="header">
@@ -7,7 +10,7 @@
 	
 	<div class="headerTitle">
 	{% block title%}
-		Base Title
+		Django Site :)
 	{% endblock title%}
 	</div>
 	
@@ -29,7 +32,7 @@
 
 <div class="sideBar">
 	{% block sideBar%}
-		<a href="{% url 'common:index' %}">Home</a>
+		<li><a href="{% url 'common:index' %}">Home</a></li>
 	{% endblock %}
 </div>
 

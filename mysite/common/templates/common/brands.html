@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block currentItem%} Brands {% endblock %}
+
+{% block content%}
+	Brands: {{brands.count}}
+
+	<form id="createBrand" action="{% url 'common:newBrand'%}">
+   		{% bootstrap_button "Create" button_type="submit" %}
+	</form>	
+{% endblock content%}
