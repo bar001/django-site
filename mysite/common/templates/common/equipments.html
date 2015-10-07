@@ -7,9 +7,11 @@
 {% block currentItem%} Equipments {% endblock %}
 
 {% block content %}
-	Equipments: {{equips.count}}
-
 	<form id="createEquip" action="{% url 'common:newEquip'%}">
    		{% bootstrap_button "Create" button_type="submit" %}
 	</form>
+
+	Equipments: {{equips.count}}
+
+
 {% endblock%}

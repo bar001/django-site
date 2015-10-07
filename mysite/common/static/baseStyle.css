@@ -19,7 +19,8 @@
 .currentItem{
 	position:absolute;
 	left: 210px;
-	top: 25px;
+	top: 20px;
+	font-size:18;
 	font-family:"Times New Roman", Times, serif;
 	font-style:italic;
 }
@@ -72,9 +73,21 @@
 	padding:10px;
 }
 
-#createEquip, #createBrand{
+#createEquip{
 	float:right;
 }
+
+.createBrand{
+	position:relative;
+	float:right;
+}
+
+.brandList{
+	position:relative;
+	float:left;
+}
+
+
 
 
 
