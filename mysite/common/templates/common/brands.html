@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block currentItem%} Brands {% endblock %}
+
+{% block content%}
+	<div class="brandList">
+		{% for brand in brands%}
+			<li class="brandListItem">{{brand.name}}</li>
+		{% endfor %}
+	</div>
+	<div class="createBrand">
+		<form action="{% url 'common:newBrand'%}">
+   			{% bootstrap_button "Create" button_type="submit" %}
+		</form>	
+	</div>
+{% endblock content%}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block currentItem%} Equipments {% endblock %}
+
+{% block content %}
+	<form id="createEquip" action="{% url 'common:newEquip'%}">
+   		{% bootstrap_button "Create" button_type="submit" %}
+	</form>
+
+	Equipments: {{equips.count}}
+
+
+{% endblock%}
